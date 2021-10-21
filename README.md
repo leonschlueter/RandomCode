@@ -1,2 +1,2 @@
 # RandomCode
-This is random Code I wrote (e.g. Algorithms) and other tasks!
+This is random java code I wrote (e.g. Algorithms) and other programs! 
