@@ -5,14 +5,15 @@ public class ArrayGenerator {
 	Random random;
 
 	public ArrayGenerator(int n) {
-		Random random = this.random;
+		this.random = new Random();
 		int[] arr = new int[n];
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = random.nextInt();
+			arr[i] = random.nextInt(100);
 		}
+		this.arr = arr;
 	}
 
-	public int[] Array() {
+	public int[] getArray() {
 		return this.arr;
 	}
 }
