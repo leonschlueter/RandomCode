@@ -25,23 +25,19 @@ public class SearchAlgos {
 		}
 		return -1;
 	}
-	
+
 	public static int binarySearchIterative(int[] arr, int k) {
 		int l = 0, r = arr.length - 1;
-        while (l <= r) {
-            int m = l + (r - l) / 2;
-            if (arr[m] == k)
-                return m;
- 
+		while (l <= r) {
+			int m = l + (r - l) / 2;
+			if (arr[m] == k)
+				return m;
+			if (arr[m] < k)
+				l = m + 1;
+			else
+				r = m - 1;
+		}
 
-            if (arr[m] < k)
-                l = m + 1;
- 
-
-            else
-                r = m - 1;
-        }
- 
-        return -1;
+		return -1;
 	}
 }
